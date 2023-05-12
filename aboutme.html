@@ -45,9 +45,9 @@
 									<span class="date"></span>
 									<h1>Steven<br />
 									Reyes</h1>
-									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-									amet nullam sed etiam veroeros.</p>
+									<p>24 and searching for new opportunities to expand my professional<br />
+									life. Setting life goals to accomplish every year for myself so that I maintain<br />
+									a life of fufillment and legacy. I hope to enjoy every aspect of life and what it has to offer.</p>
 								</header>
 								<div class="image main"><img src="picture of me.PNG" alt="" /></div>
 								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sapien risus, commodo eget turpis at, elementum convallis enim turpis, lorem ipsum dolor sit amet nullam.</p>
@@ -115,4 +115,34 @@
 			<script src="assets/js/main.js"></script>
 
 	</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>QR Code for LinkedIn Profile</title>
+	<style>
+		.container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+	</style>
+	<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3/dist/crate.esm.js"></script>
+</head>
+<body>
+	<div class="container">
+		<script type="text/javascript">
+			var qrcode = new QRCode(document.getElementById("qrcode"), {
+				text: "https://www.linkedin.com/in/stevenreynaldoreyes/",
+				width: 256,
+				height: 256,
+				colorDark : "#000000",
+				colorLight : "#ffffff",
+				correctLevel : QRCode.CorrectLevel.H
+			});
+		</script>
+		<div id="qrcode"></div>
+	</div>
+</body>
 </html>
